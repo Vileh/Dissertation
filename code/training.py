@@ -84,7 +84,7 @@ def arcface_train_loop(model_name, training_augments, label_map, batch_size=64, 
         num_classes = len(set(train_dataset.classes))
 
         model = models.ArcFaceEN(num_classes)
-        model.to(device);
+        model.to(device)
 
         # Initialize lists to store the losses and accuracies
         losses = {'train': [], 'val': [], 'test': []}
